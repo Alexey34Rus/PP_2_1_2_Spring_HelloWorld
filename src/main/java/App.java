@@ -9,5 +9,10 @@ public class App {
         HelloWorld bean2 = (HelloWorld) applicationContext.getBean("helloworld");
 
         System.out.println("references beans HelloWord: " + (bean1 == bean2));
+
+        Cat beanCat1 = applicationContext.getBean("cat", Cat.class);
+        Cat beanCat2 = applicationContext.getBean("cat", Cat.class);
+
+        System.out.println("references beans Cat: " + (beanCat1 == beanCat2));
     }
 }

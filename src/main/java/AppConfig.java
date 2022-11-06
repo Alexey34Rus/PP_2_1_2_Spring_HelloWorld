@@ -17,6 +17,6 @@ public class AppConfig {
     public Cat getCat() {
         Cat cat = new Cat();
         cat.setMassage("I'm cat");
-
+        return cat;
     }
 }
